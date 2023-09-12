@@ -1,0 +1,6 @@
+1. Create a context
+- import {createContext} from 'react'
+
+2. Create a provider
+
+3. useContext Hook
