@@ -4,3 +4,8 @@
 2. Create a provider
 
 3. useContext Hook
+
+
+- We can use the context either in root or even in the child component
+- One can pass props as variables or object 
+- Update data passed via context

@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Details from './Details'
+import UserContext from '../context/UserContext'
+
 
 function Users() {
-  return (
-    <div>
-      Users
-      <Details />
-    </div>
-  )
+    
+    const data = useContext(UserContext);
+
+    return (
+        <div>
+            Users : {data}
+            <Details />
+        </div>
+    )
 }
 
 export default Users

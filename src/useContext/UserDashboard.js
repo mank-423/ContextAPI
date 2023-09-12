@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Users from './Users'
+import UserContext from '../context/UserContext'
 
 function UserDashboard() {
-  return (
-    <div>
-      <h1>Context hook</h1>
-      <Users />
 
-    </div>
-  )
+    const [userName, setUserName] = useState("Mayank");
+    const users = {
+        userName,
+        updateName: setUserName
+    }
+    
+    return (
+        <UserContext.Provider value={users.userName}>
+            <h4>UserContext Hook</h4>
+            <Users />
+        </UserContext.Provider>
+    )
 }
 
 export default UserDashboard
