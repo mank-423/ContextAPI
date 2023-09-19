@@ -1,0 +1,2 @@
+1. Make a context using createContext and export default
+2. Make a provider to apply in main.jsx
