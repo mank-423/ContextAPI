@@ -13,6 +13,9 @@ export const TodoContext = createContext({
             completed: false
         },
     ],
+
+    //Create function here just a skeleton
+    //Complete it in the app
     addTodo: (todo) => {},
     updateTodo: (id, todo)=> {},
     deleteTodo: (id) => {},
